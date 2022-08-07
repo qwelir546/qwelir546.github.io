@@ -1,0 +1,42 @@
+
+@font-face {
+	font-family: 'FranklinGM';
+	src: url('../fonts/ofont.ru_Franklin Gothic Medium.eot');
+	src: local('☺'), url('../fonts/ofont.ru_Franklin Gothic Medium.woff') format('woff'), url('../fonts/ofont.ru_Franklin Gothic Medium.ttf') format('truetype'), url('../fonts/ofont.ru_Franklin Gothic Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Calibri';
+	src: url('../fonts/ofont.ru_Calibri.eot');
+	src: local('☺'), url('../fonts/ofont.ru_Calibri.woff') format('woff'), url('../fonts/ofont.ru_Calibri.ttf') format('truetype'), url('../fonts/ofont.ru_Calibri.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bahn';
+	src: url('../fonts/ofont.ru_Bahnschrift.eot');
+	src: local('☺'), url('../fonts/ofont.ru_Bahnschrift.woff') format('woff'), url('../fonts/ofont.ru_Bahnschrift.ttf') format('truetype'), url('../fonts/ofont.ru_Bahnschrift.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.box{
+text-align: center;
+margin-top: 100px;
+margin: 0 auto;
+font-size: 60px;
+    font-family: 'FranklinGM', sans-serif;
+}
+
+
+.gig{
+    text-align: center;
+margin-top: 100px;
+margin: 0 auto;
+font-size: 60px;
+    font-family: 'Calibri', sans-serif;
+}
+
