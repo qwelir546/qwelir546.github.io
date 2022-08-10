@@ -153,7 +153,7 @@ nav{
 
 .A_me{
     font-size: 35px;
-    padding-top: 25px;
+    padding-bottom: 30px;
     text-transform: uppercase;
     font-family: 'FranklinGM', sans-serif;
 }
@@ -169,6 +169,7 @@ nav{
 .p1{
     margin-top: 10px;
 font-family: 'Calibri', sans-serif;
+    text-align: center;
 }
 
 
@@ -176,6 +177,7 @@ font-family: 'Calibri', sans-serif;
     margin-top: 15px;
     margin-bottom: 20px;
 font-family: 'Calibri', sans-serif;
+    text-align: center;
 }
 
 
@@ -183,7 +185,7 @@ font-family: 'Calibri', sans-serif;
 
 .what_i_can_do{
     background-image: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png);
-    height: 523px;
+    background-size: cover;
 }
 
 
@@ -198,9 +200,7 @@ font-family: 'Calibri', sans-serif;
 
 
 .skills{
-    width: 300px;
     float: left;
-    padding-right: 70px;
     color: #384354;
     font-family: 'Calibri', sans-serif;
 }
@@ -220,13 +220,26 @@ font-family: 'Calibri', sans-serif;
 }
 
 
-/*
-
-
-.cases{
-    margin: 0 auto;
+.about_me resume{
+      width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: -26px;
+  position: relative;
+  z-index: 1;
+  float: left;
 }
 
+
+.about_me input{
+background: none;
+}
+
+.cases{
+    max-width: 100%;
+    margin-bottom: 100px;
+}
 
 
 .cases>h4{
@@ -237,33 +250,33 @@ font-family: 'Calibri', sans-serif;
     text-align: center;
     color: #384354;
     font-family: 'FranklinGM', sans-serif;
+    text-transform: uppercase;
 }
 
 
 
 .up{
     text-align: center;
-    margin: 0 auto 40px auto;
+    margin: 40px;
     font-family: 'Calibri', sans-serif;
 }
 
 
 .case{
     text-align: left;
-    margin: 0 21%;
-    width: 1180px;
+    width: 100%;
     display: inline-block;
     
 }
 
 
 .left{
-    float: left;
-    margin-right: 100px;
     font-family: 'Calibri', sans-serif;
+    float: left;
 }
 
 .right{
+    margin-left: 300px;
     font-family: 'Calibri', sans-serif;
 }
 
@@ -277,7 +290,10 @@ font-family: 'Calibri', sans-serif;
 
 
 .cost{
-    font-family: 'FranklinGM', sans-serif;
+    background-image: url(../img/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%201.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
 }
 
 
@@ -286,26 +302,27 @@ font-family: 'Calibri', sans-serif;
     text-align: center;
     margin: 120px 0 50px 0;
     color: #1c2534;
+    font-family: 'FranklinGM', sans-serif;
+    text-transform: uppercase;
 }
 
 
 .select{
     text-align: left;
-    margin: 0 auto;
-    width: 950px;
     margin: 30px auto;   
-    font-size: 25px; 
+    font-size: 15px; 
 }
 
 
-.select>h3{
+.H3{
     margin-bottom: 3px;
+    font-family: 'FranklinGM', sans-serif;
 }
 
 
 .mySelect{
+    width: 100%;
     display: block;
-    width: 900px;
     height: 60px;
     background: #eeeeee;
 }
@@ -314,10 +331,11 @@ font-family: 'Calibri', sans-serif;
 .cost span{
     display: block;
     text-align: left;
-    margin: 0 auto;
     font-size: 18px;
     color: #1c2534;
-    width: 950px;
+    font-family: 'FranklinGM', sans-serif;
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
 
@@ -325,11 +343,12 @@ font-family: 'Calibri', sans-serif;
 
 .statistic{
     background-image: url(../img/41263304_m-1-.png);
+    background-position: center;
+    background-size: cover;
     margin: 30px auto;
-    height: 500px;
     text-align: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
 }
 
 
@@ -345,17 +364,16 @@ font-family: 'Calibri', sans-serif;
 
 .stats{
     text-align: center;
-    margin-left: calc(50% - 425px);
+    
     width: 950px;
     margin-top: 40px;
+    
 }
 
 
 .stat{
     float: left;
-    width: 215px;
-    text-align: center;
-    margin: 10 auto;
+    padding-bottom: 30px;
     color: #384354;
     font-family: 'FranklinGM', sans-serif;
 }
@@ -379,8 +397,8 @@ font-family: 'Calibri', sans-serif;
 
 .reviews>h2{
     font-size: 30px;
-     padding-top: 50px;
-    padding-bottom: 30px;
+     padding-top: 20px;
+    padding-bottom: 29px;
     margin: 30px auto;
     font-family: 'FranklinGM', sans-serif;
 }
@@ -391,21 +409,23 @@ font-family: 'Calibri', sans-serif;
 }
 
 
+
+
 .contacts{
     background-image:url(../img/%D0%A4%D0%BE%D0%BD_icon.png);
-    text-align: center;
-    margin: 0 auto;
-    height: 800px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 40px;
     font-family: 'Calibri', sans-serif;
 }
 
 
-.contacts>h2{
+.My_conts{
     height: 35px;
-    font-size: 30px;
-    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
      padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     margin: 30px auto;
     color: #ffffff;
     font-family: 'FranklinGM', sans-serif;
@@ -413,33 +433,29 @@ font-family: 'Calibri', sans-serif;
 
 
 .conts{
-    margin-left: calc(50% - 300px);
-    text-align: center;
-    width: 750px;
     height: 60px;
 }
 
 
 .cont{
     float: left;
-    margin-right: 100px;
-    margin: 70px 90px 50px 0px;
     color: #ffffff;
 }
 
 
-.cont>p{
+.lorem{
     padding-top: 12px;
+    color: #ffffff;
+    text-align: center;
 }
 
 
-.com>h3{
-    text-align: center;
-    width: 360px;
+.massage{
+    margin-top: 100px;
     font-size: 30px;
-    margin: 0px auto 40px auto;
     color: #ffffff;
     font-family: 'FranklinGM', sans-serif;
+    margin-bottom: 50px;
 }
 
 
@@ -448,17 +464,11 @@ font-family: 'Calibri', sans-serif;
 }
 
 
-.sms{
-    margin: 0 auto;
-    width: 800px;
-}
-
-
 .Mycom{
     display: block;
     float: left;
     height: 35px;
-    width: 380px;
+    width: 50%;
     text-align: left;
     padding-left: 10px;
     background-color: #d9dde3;
@@ -469,18 +479,16 @@ font-family: 'Calibri', sans-serif;
     display: block;
     float: left;
     height: 35px;
-    width: 380px;
-    text-align: left;
+    width: 50%;
     padding-left: 10px;
-    margin-left: 40px;
     background-color: #d9dde3;
 }
 
 
-.sms>textarea{
+.col-12>textarea{
     text-align: left;
-    width: 800px;
     background-color: #d9dde3;
+    width: 100%;
     padding: 10px 0 0 10px;
 }
 
@@ -499,21 +507,19 @@ font-family: 'Calibri', sans-serif;
 
 
 
+
 .maps>img{
     width: 100%;
 }
 
 
 .maps>p{
-    text-align: center;
-    margin-top: calc(50% - 880px);
     font-size: 15px;
     height: 70px;
 }
 
 
 
-*/
 
 
 
@@ -685,7 +691,29 @@ transform: scale(1.1);
     }
     
     .p2{
-        font-size: 14px;
-    
+        font-size: 14px;   
+}
+}
+
+
+@media(max-width: 767px) {
+    .left{
+        float: none;
+    }
+
 }
     
+@media(max-width: 767px){
+    .right{
+        margin-left: 0px;
+    }
+}
+
+
+@media(max-width: 575px) {
+    .massage{
+        padding-top: 200px;
+    }
+}
+    
+}
