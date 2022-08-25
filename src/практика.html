@@ -22,26 +22,6 @@
 </div>
 
 
-<div class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Заголовок модального окна</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-      </div>
-      <div class="modal-body">
-        <p>Здесь идет основной текст модального окна</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-primary">Сохранить изменения</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
 
 <header>
     <nav> 
@@ -86,6 +66,25 @@
     </nav> 
 </header>
 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+</button>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Привет!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+      Нужен сайт? Тогда у меня хорошая новость: на данный момент ты можешь получить скидку 30% на своей первый заказ (смотри в разделе ...)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Окей</button>
+      </div>
+    </div>
+    </div>
+    </div>
 
 <section class="main">
 <section id="face">
@@ -356,7 +355,7 @@
     </div>
     <div class="stat col-lg-2 offset-lg-1 col-sm-4 offset-sm-1 my-sm-5 my-lg-0 col-10 my-5 text-center ">
         <img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="" width="90" height="70">
-        <h3 class="rewards">0</h3>
+        <h3 id="rewards">0</h3>
         <b>Наград получено</b>
     </div>
 </div></div>
@@ -485,6 +484,7 @@
 </div>
 </section>
 </section> 
+
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
