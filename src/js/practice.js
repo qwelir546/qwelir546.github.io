@@ -1,6 +1,8 @@
 
 $(document).ready(function(){
     
+    $(".preloader").css("display", "none"); 
+    
     
     const time = 3000;
     const step = 10;
@@ -69,7 +71,7 @@ clearInterval(interval);
     
     
     
-$(".preloader").css("display", "none"); 
+
     
     
     
@@ -113,32 +115,6 @@ $(".preloader").css("display", "none");
 
 
 
-
-
-    $(window).scroll(() => {
-        
-        let scrollDist = $(window).scrollTop();
-        
-        $(".section").each((i, el) => {
-            
-            if($(el).offset().top - $("nav").outerHeight() <= scrollDist){
-                $('nav a').each((i, el) => {
-                    if ($(el).hasClass('active')){
-                        $(el).removeClass('active');
-                    }
-                });
-                
-                $('nav li:eq('+ i +')').find('a').addClass('active');
-            }
-            
-        });
-       
-});
-
-   
-
-
-
     $("a[href^='#']").click(function(){
 let valHref = $(this).attr("href");
         $("html, body").animate({scrollTop: $(valHref). offset().top - 100 + "px"});
@@ -168,66 +144,6 @@ let valHref = $(this).attr("href");
         $(document).ready(function() {
   $('.image-link').magnificPopup({type:'image'});
 });
-        
-/*
-let sum = 0, a, b, c, d, e;
-console.log(sum)
-let tipe = prompt("Какого типа сайт вам нужен?    (укажите букву)    [1] информационный сайт    [2] корпоративный сайт    [3] интернет-магазин    [4] сайт-визитка   [5] персональный проект");
-console.log(tipe);
-if(tipe == 1 || 2){
-    sum += 3000;
-}
-else if(tipe == 3 || 5){
-    sum += 5000;
-}
-else {
-    sum += 2000;
-}
-console.log(sum)
-
-let design = prompt("В каком дизайне сайт вы хотитет?    (укажите букву)    [1] уникальный    [2] шаблонный");
-console.log(design);
-if(design == 1){
-    sum += 4000;
-}
-else if(design == 2){
-    sum += 3000;
-}
-console.log(sum)
-
-let adapt = prompt("адаптивность сайта    (укажите букву)    [1] адаптианвый    [2] не адаптивный");
-console.log(adapt);
-if(design == 1){
-    sum += 4000;
-}
-else if(design == 2){
-    sum += 2000;
-}
-console.log(sum)
-
-confirm("Приблизительная стоимость: " + sum);
-
-
-
-
-
-let options = {threshold: [0.5]};
-let observer = new IntersectionObserver(onEntry, options);
-let elements = $("");
-elements.each((i, el) => {
-observer.observe(el);
-});
-  
-function onEntry (entry){
-entry.forEach(change => {
-if (change.inIntersecting){
-    change.target.classList.add("")
-}
-});
-}
-
-});
-*/
 
 
 });
