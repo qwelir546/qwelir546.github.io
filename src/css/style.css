@@ -222,7 +222,6 @@ nav{
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
-    opacity: 0;
 }
 
 .img_animate{
@@ -274,18 +273,6 @@ font-family: 'Calibri', sans-serif;
     padding-bottom: 10px;
     color: #cf7600;
     font-family: 'Bahn', sans-serif;
-}
-
-
-.skills img{
-    width: 70px;
-    height: 60px;
-    opacity: 0;
-}
-
-.skills_animate{
-    opacity 1;
-    transition: opacity 2s;
 }
 
 
@@ -583,12 +570,6 @@ background: none;
 }
 
 
-.map img{
-    display: block;
-    width: 100%;  
-}
-
-
 .maps{
     background: #354051;
     height: 94px;
@@ -601,15 +582,6 @@ background: none;
     color: white;
 }
 
-
-.icon{
-    opacity 0;
-}
-
-.icon_animate{
-    opacity 1;
-transition: opacity 2s;
-}
 
 
 .menu li a{

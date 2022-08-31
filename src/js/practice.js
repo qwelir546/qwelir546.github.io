@@ -4,6 +4,22 @@ $(document).ready(function(){
     $(".preloader").css("display", "none"); 
     
     
+        $('form').submit(function(event){
+event.prreventDefault();
+        
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val("");
+            alert("Сообщение успешно отправлено");
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+    
+    
     const time = 3000;
     const step = 10;
     const step1 = 50;
@@ -122,8 +138,8 @@ let valHref = $(this).attr("href");
 
 
         
- 
-        let options = {threshold: [0.7]};
+ /*
+        let option = {threshold: [0.7]};
         let observer = new IntersectionObserver(onEntry, option);
         let elements = $('.icon');
         elements.each((i, el) => {
@@ -138,7 +154,7 @@ let valHref = $(this).attr("href");
             });
         }
         
-
+*/
         
         
         $(document).ready(function() {
@@ -167,11 +183,18 @@ calculate();
     }
     setTimeout(say, 10000);
 
+    $(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
     
     
     
+    $("#Mycom1").mask("+7(999) 999-9999");
     
     });
+
+
+
 
 
 

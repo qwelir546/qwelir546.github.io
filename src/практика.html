@@ -112,7 +112,7 @@
    </div>
    </div>
    
-    <img class="animate__animated animate__flipInX animate__slow"  src="img/%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="" width="150" height="170" >
+    <img class="animate__animated animate__flipInX animate__slow wow" data-wow-delay="0.2s"  src="img/%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="" width="150" height="170" >
     <div class="row justify-content-center">
         <div class="col-8">
             <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloribus cumque dolor sapiente, expedita eaque quisquam voluptatibus, omnis veniam recusandae delectus totam beatae repudiandae fugiat nulla incidunt vel quas blanditiis voluptate. Quasi, suscipit, cumque.</p>
@@ -144,27 +144,27 @@
 <div class="row justify-content-center">
 <div class="all_skills">
     <div class="skills col-12 col-md-6 col-xl-3 text-center">
-<img class="icon animate__flip animate__animated  animate__slow" src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="" width="85" height="70">
+<img class="icon animate__flip animate__animated  animate__slow wow" data-wow-delay="0.2s" src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="" width="85" height="70">
 <h3>Веб-дизайн</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Fugiat quae numquam dicta quidem rerum cum corrupti</p> 
     </div>
     
     <div class="skills col-12 col-md-6 col-xl-3 text-center">
-<img class="icon animate__flip animate__animated animate__slow" src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="" width="85" height="70">
+<img class="icon animate__flip animate__animated animate__slow wow" data-wow-delay="0.2s" src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="" width="85" height="70">
 <h3>Разработка</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Provident similique amet, aliquid culpa est ipsa.</p>
     </div>
        
        
         <div class="skills col-12 col-md-6 col-xl-3 text-center">
-<img class="icon animate__flip animate__animated  animate__slow" src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="" width="85" height="70">
+<img class="icon animate__flip animate__animated  animate__slow wow" data-wow-delay="0.2s" src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="" width="85" height="70">
 <h3>Разработка</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Provident similique amet, aliquid culpa est ipsa.</p>
     </div>
 
     
     <div class="skills col-12 col-md-6 col-xl-3 text-center">
-<img class="icon animate__flip animate__animated  animate__slow" src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="" width="850" height="70">
+<img class="icon animate__flip animate__animated  animate__slow wow" data-wow-delay="0.2s" src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="" width="85" height="70">
 <h3>Маркетинг</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Debitis, doloribus libero quasi ad error alias.</p>
     </div>
@@ -449,18 +449,18 @@
    <div class="row justify-content-center"><div class="col-sm-8 col-12 text-center">
     <h3 class="massage">Оставьте мне сообщение</h3>
     </div></div>
-    <form action="#">
+    <form action="php/mail.php" method="post">
      <div class="row justify-content-center"><div class="col-8">
     <div class="sms">
        <div class="row justify-content-between">
-        <input class="Mycom col-sm-5 col-12 my-sm-0 my-3" type="tel" placeholder="Имя">
-        <input class="Mycom1 col-sm-5 col-12 my-sm-0 my-3" type="tel" placeholder="Фамилия">
+        <input class="Mycom col-sm-5 col-12 my-sm-0 my-3" name="user_name" type="tel" placeholder="Имя">
+        <input id="Mycom1" name="user_phone" required class="Mycom1 col-sm-5 col-12 my-sm-0 my-3" type="phone" placeholder="Телефон">
         </div>
         <div class="clear"></div>
         <br>
         <div class="col-12 text-center">
-        <textarea  name="сообщение" id="" cols="50" rows="10" placeholder="Cообщение"></textarea>
-        <input class="but" type="reset" value="отправить">
+        <textarea  name="user_sms" id="" cols="50" rows="10" placeholder="Cообщение"></textarea>
+        <input class="but" type="submit" value="отправить">
         </div>
          </div>
          </div>
@@ -475,11 +475,11 @@
    
    <section id="map">
 <div class="map">
-    <img src="img//%D0%9A%D0%B0%D1%80%D1%82%D0%B0%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png" alt="">
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34a61cc02c29882a3de651ac55e11de2489ecef912e765275e06b9b78f41d7ba&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
     </div>
     <div class="maps">
 <div class="Footer">
-    <p>Copyright © 2021 Андрей Браун. Design by Web</p>
+    <p>Copyright © 2022 Антон Гусев. Design by Web</p>
 </div>
 </div>
 </section>
@@ -489,6 +489,9 @@
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/wow.js"></script>
+<script>new WOW().init();</script>
+<script src="js/maskedinput.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/practice.js"></script>
     </body>
