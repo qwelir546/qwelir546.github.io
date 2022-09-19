@@ -5,7 +5,7 @@ $(document).ready(function(){
     
     
         $('form').submit(function(event){
-event.prreventDefault();
+event.preventDefault();
         
         $.ajax({
             type: "POST",
@@ -24,8 +24,15 @@ event.prreventDefault();
     const step = 10;
     const step1 = 50;
     const step3 = 1;
+    var flag = 0;
     
-    function outNum(num, element){
+    if (flag == 0)
+        {
+
+            
+            
+            
+               function outNum(num, element){
         let l = document.querySelector('#' + element);
         n = 0;
         let t = Math.round(time/(num/step));
@@ -76,12 +83,32 @@ clearInterval(interval);
             }
             l.innerHTML = y;
         }, t);
+        
     };
-    
-    outNum(750, 'client');
-    outNum1(3400, 'hours');
-    outNum2(770, 'projects');
-    outNum3(27, 'rewards');
+            flag = 1; 
+        }
+        
+    var exam = 0
+    if(exam == 0)
+        {
+                var observer = new
+    IntersectionObserver((entries,observer) =>
+                         {entries.forEach(entry=>
+                                          {if(entry.isIntersecting){console.log('работает');
+                                                                    outNum(750,'client');
+                                                                    outNum1(3400,'hours');
+                                                                    outNum2(770,'projects');
+                                                                    outNum3(27,'rewards')}
+                                          }
+                                         )},
+                         {threshold:1})
+    document.querySelectorAll('.stat').forEach(entry=>observer.observe(stat));
+            exam = 1;
+        }
+
+
+
+
     
    
     
@@ -173,16 +200,20 @@ function calculate(){
     $(".days .digit").text(days);
 }
 
+    
 $("select").on("change", function(){
     calculate();
 });
 calculate();
     
+    
     function say(){
         $(".btn-primary").click();
     }
-    setTimeout(say, 10000);
+    setTimeout(say, 3000);
 
+    
+    
     $(document).ready(function() {
   $('.image-link').magnificPopup({type:'image'});
 });
