@@ -46,7 +46,7 @@ let valHref = $(this).attr("href");
 
     
             $('form').submit(function(event){
-event.preventDefault();
+                event.preventDefault();
         $.ajax({
             type: "POST",
             url: "php/mail.php",
