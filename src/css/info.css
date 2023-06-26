@@ -1,0 +1,17 @@
+.new {
+  margin: 70px 0;
+  border-bottom: 1px solid black;
+}
+.new .new__title {
+  font-size: 25px;
+  color: rgb(254, 23, 32);
+}
+.new .new__body {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.new .new__date {
+  font-size: 18px;
+  margin-top: 5px;
+  text-align: end;
+}/*# sourceMappingURL=info.css.map */
