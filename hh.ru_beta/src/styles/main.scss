@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Montserrat:ital,wght@1,600&display=swap');
+
+
+
+
+
+%main__red-color{
+  color: rgb(254,23,32);
+  }
+  %main__orange-color{
+  color:rgb(254,128,21);
+  }
+
+
+  body{
+    font-family: 'Manrope', sans-serif;
+  }
+
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .logo{
+    width: 830px;
+    height: 650px;
+  }
+
+  .day-night{
+    position: absolute;
+    cursor: pointer;
+    width: 70px;
+    top: 40px;
+    right: 50px;
+    z-index: 10;
+  }
+
+  .container1{
+    max-width: 1820px;
+    margin: 0 auto;
+  }
+  
+  .main_header{
+    background: url(../img/white-back.jpeg);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 850px;
+    img{
+      position: relative;
+      left: 50px;
+      top: 120px;
+    }
+    .main_logo{
+      position: relative;
+      left: 590px;
+      top: -570px;
+      font-size: 110px;
+      @extend %main__red-color;
+      font-weight: 900;
+      width: 300px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    ul{
+      position: relative;
+      bottom: 300px;
+      left: 1250px;
+      font-size: 30px;
+      width: 650px;
+      li{
+        list-style: inside;
+        margin: 15px;
+        @extend %main__red-color;
+        span{
+          @extend %main__orange-color;
+        }
+      }
+    }
+  }
+
+  .main_navbar{
+    height: 70px;
+    line-height: 70px;
+    margin: 45px 0 80px 0;
+    font-weight: 550;
+    width: 100%;
+    background: #fff;
+    .navbar__items{
+      height: 70px;
+      width: 933px;
+      display: flex;
+      margin: 0 auto;
+      a{
+        cursor: pointer;
+        margin: 0px 40px;
+        justify-content: space-around;
+        font-size: 38px;
+        @extend %main__red-color;
+        text-decoration: none;
+        &:hover{
+          transform: scale(1.1);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+
+  .main{
+    height: 600px;
+    .main__title{
+      margin: 15px auto 70px auto;
+      display: block;
+      font-size: 45px;
+      text-align: center;
+      margin-top: 50px;
+      width: 900px;
+      @extend %main__orange-color;
+      font-weight: 500;
+    }
+    .avtomoika, .avtoservice{
+      display: flex;
+      float: left;
+      height: 350px;
+      img{
+        width: 300px;
+        height: 330px;
+        margin: 30px 30px 0 0;
+      }
+      .some-info{
+        p{
+          @extend %main__red-color;
+          text-align: center;
+          margin-left: -25px;
+          margin-bottom: 10px;
+          font-size: 25px;
+        }
+        ul{
+          width: 660px;
+          font-size: 17px;
+          li{
+            list-style-type: '- ';
+            margin: 8px;
+          }
+        }
+      }
+    }
+    .avtoservice{
+      width: 54%;
+      .some-info{
+        ul{
+          column-count: 2;
+          padding-left: 0;
+        }
+        p{
+          text-align: start;
+        }
+      }
+    }
+    .avtomoika{
+      width: 45%;
+      .some-info{
+        ul{
+          width: 527px;
+          padding-top: 56px;
+          padding-left: 0;
+          column-count: 1;
+        }
+      }
+    }
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 200px;
+    grid-row-gap: 60px;
+    .grid__element{
+      font-size: 23px;
+      text-align: center;
+    }
+  }
+
+  .footer{
+    border-top: 1px solid rgba(254,128,21,0.7);
+    height: 210px;
+    margin-top: 60px;
+    .footbar{
+      display: grid;
+      grid-template-columns:  1fr 1fr 1fr;
+      grid-column-gap: 140px;
+      text-align: center;
+      .footer_img{
+        width: 150px;
+        height: 150px;
+        margin-top: 25px;
+        &:hover{
+          transform: scale(1.1);
+          transition: 0.2s;
+        }
+      }
+      .reserve_number{
+        @extend %main__red-color;
+        font-size: 65px;
+        margin-top: 65px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .contacts__logo{
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        margin-top: 82px;
+        a{
+          &:hover{
+            transform: scale(1.1);
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
+
+
